@@ -101,7 +101,7 @@ function App() {
     formData.append('target_job', jobDescription);
 
     try {
-      const response = await axios.post('http://127.0.0.1:8000/analyze', formData, {
+      const response = await axios.post('https://ai-resume-analyzer-qbch.onrender.com/analyze', formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
       });
       setResults(response.data);
