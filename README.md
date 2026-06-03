@@ -20,7 +20,17 @@
 ---
 
 ## 📸 Dashboard Preview
-> **Note:** *Insert a screenshot of your running app here by dragging and dropping the image directly into this editor.*
+### 📤 1. Easy Resume Upload
+![image](https://github.com/Vishvapriya-24/ai-resume-analyzer/blob/2677c960db344148c5804f5293d660cf4203b0a4/FrontPage.png)
+
+### 🎯 2. Instant Match Score
+![image](https://github.com/Vishvapriya-24/ai-resume-analyzer/blob/2677c960db344148c5804f5293d660cf4203b0a4/MatchScore.png)
+
+### 📊 3. Deep Skill Analytics
+![image](https://github.com/Vishvapriya-24/ai-resume-analyzer/blob/2677c960db344148c5804f5293d660cf4203b0a4/Analytics.png)
+
+### 📄 4. Professional PDF Export
+![image](https://github.com/Vishvapriya-24/ai-resume-analyzer/blob/2677c960db344148c5804f5293d660cf4203b0a4/Advice.png)
 
 ---
 
