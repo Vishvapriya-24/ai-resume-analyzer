@@ -52,13 +52,115 @@ This project utilizes a decoupled microservices architecture:
 * **Hosting:** Render
 
 ---
-
 ## 🚀 Run It Locally
 
 Want to run this project on your own machine? Follow these detailed configuration steps:
 
 ### 1. Clone the Repository
+
 Open your terminal and run:
+
 ```bash
-git clone [https://github.com/Vishvapriya-24/ai-resume-analyzer.git](https://github.com/Vishvapriya-24/ai-resume-analyzer.git)
+git clone https://github.com/Vishvapriya-24/ai-resume-analyzer.git
 cd ai-resume-analyzer
+```
+
+---
+
+### 2. Setup the Python Backend
+
+The backend handles PDF processing and manages communications with the Gemini API.
+
+#### Navigate into the backend directory
+
+```bash
+cd ai-backend
+```
+
+#### Create an isolated virtual environment
+
+This helps prevent package conflicts.
+
+```bash
+python -m venv venv
+```
+
+#### Activate the virtual environment
+
+**Windows (Command Prompt)**
+
+```bash
+venv\Scripts\activate.bat
+```
+
+**Windows (PowerShell)**
+
+```powershell
+venv\Scripts\activate.ps1
+```
+
+**Mac/Linux**
+
+```bash
+source venv/bin/activate
+```
+
+#### Install backend dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+#### Configure environment variables
+
+Create a file named `.env` inside the `ai-backend` directory and add:
+
+```env
+GEMINI_API_KEY=your_actual_api_key_here
+```
+
+#### Start the backend server
+
+```bash
+uvicorn main:app --reload
+```
+
+The API will be available at:
+
+```text
+http://127.0.0.1:8000
+```
+
+---
+
+### 3. Setup the React Frontend
+
+The frontend provides the interactive user interface and dashboard.
+
+#### Open a new terminal and navigate to the frontend folder
+
+```bash
+cd frontend
+```
+
+#### Install frontend dependencies
+
+```bash
+npm install
+```
+
+#### Start the development server
+
+```bash
+npm run dev
+```
+
+Open the local URL shown in the terminal (typically):
+
+```text
+http://localhost:5173
+```
+
+to access the application in your browser.
+
+---
